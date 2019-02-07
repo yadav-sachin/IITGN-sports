@@ -1,11 +1,9 @@
 
-  #white_l {
+  .nav-link, .navbar-brand{
       color:#ffffff !important;
     }
-    #white_l2 {
-      color:#ffffff !important;
     }
-    #white_l:hover {
+    .nav-link:hover {
       color:#ffffff !important;
       background:rgba(255, 255, 255, 0.1);
       border-radius:5px;
