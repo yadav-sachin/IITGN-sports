@@ -1,0 +1,65 @@
+
+  #white_l {
+      color:#ffffff !important;
+    }
+    #white_l2 {
+      color:#ffffff !important;
+    }
+    #white_l:hover {
+      color:#ffffff !important;
+      background:rgba(255, 255, 255, 0.1);
+      border-radius:5px;
+    }
+    header {
+position: relative;
+background-color: black;
+height: 75vh;
+min-height: 100vh;
+width: 100%;
+overflow: hidden;
+  }
+
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100vh !important;
+    width: auto;
+    height: auto;
+    z-index: 0;
+
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  header .container {
+    position: relative;
+    z-index: 2;
+
+
+  }
+
+  header .overlay {
+    position: absolute;
+    top: 0;
+
+    left: 0;
+    min-height: 100vh !important;
+    width: 100%;
+
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1),#e9ebee);
+    opacity: 1;
+    z-index: 1;
+  }
+
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+  }
