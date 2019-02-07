@@ -14,15 +14,19 @@
       #white_l {
         color:#ffffff !important;
       }
+      #white_l2 {
+        color:#ffffff !important;
+      }
       #white_l:hover {
         color:#ffffff !important;
-        background-color:#ffffff; 
+        background:rgba(255, 255, 255, 0.1);
+        border-radius:5px;
       }
       header {
   position: relative;
   background-color: black;
   height: 75vh;
-  min-height: 25rem;
+  min-height: 100vh;
   width: 100%;
   overflow: hidden;
     }
@@ -32,7 +36,7 @@
       top: 50%;
       left: 50%;
       min-width: 100%;
-      min-height: 100%;
+      min-height: 100vh !important;
       width: auto;
       height: auto;
       z-index: 0;
@@ -51,7 +55,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      height: 100%;
+      min-height: 100vh !important;
       width: 100%;
       background-color: black;
       opacity: 0.5;
@@ -69,17 +73,17 @@
 
     </style>
   </head>
-  <body style="background:#4baad3;">
+  <body style="background:#e9ebee;">
       <header>
           <div class="overlay"></div>
           <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
           </video>
           <div class="container my-3" >
-              <nav class="navbar navbar-expand-lg navbar-light  px-5 py-2 round" style="border-radius:35px;background: rgba(0, 0, 0, 0.2);">
+              <nav class="navbar navbar-expand-lg navbar-light  px-5 py-2 round" style="border-radius:35px;background: rgba(0, 0, 0, 0.3);">
       
                 <!-- Image and text -->
-                <a class="navbar-brand" href="#" id="white_l">
+                <a class="navbar-brand" href="#" id="white_l2">
                   <img src="images/iitgnlogo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                   IITGN SPORTS
                 </a>
@@ -87,9 +91,9 @@
               <span class="navbar-toggler-icon"></span>
             </button>
       
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto " style="float:right !important;">
-                <li class="nav-item active">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align:right;">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active" >
                   <a class="nav-link" href="#" id="white_l">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -114,7 +118,11 @@
           </div>
       
       </header>
-      
+    <div class="container">
+      <div class="col-md-12">
+          dfjk
+      </div>
+    </div>  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
