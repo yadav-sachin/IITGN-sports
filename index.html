@@ -10,45 +10,111 @@
 
     <title>Sports IITGN</title>
     <link rel="icon" type="image/png" href="images/logo.svg">
+    <style>
+      #white_l {
+        color:#ffffff !important;
+      }
+      #white_l:hover {
+        color:#ffffff !important;
+        background-color:#ffffff; 
+      }
+      header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+    }
+
+    header video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: 0;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    header .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    header .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      opacity: 0.5;
+      z-index: 1;
+    }
+
+    @media (pointer: coarse) and (hover: none) {
+      header {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+      }
+      header video {
+        display: none;
+      }
+    }
+
+    </style>
   </head>
-  <body>
-
-  <div class="container my-3" >
-    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5 py-2 round" style="border-radius:35px">
-
-      <!-- Image and text -->
-      <a class="navbar-brand" href="#">
-        <img src="images/iitgnlogo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        IITGN SPORTS
-      </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto " style="float:right !important;">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav>
-</div>
-
+  <body style="background:#4baad3;">
+      <header>
+          <div class="overlay"></div>
+          <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+          </video>
+          <div class="container my-3" >
+              <nav class="navbar navbar-expand-lg navbar-light  px-5 py-2 round" style="border-radius:35px;background: rgba(0, 0, 0, 0.2);">
+      
+                <!-- Image and text -->
+                <a class="navbar-brand" href="#" id="white_l">
+                  <img src="images/iitgnlogo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                  IITGN SPORTS
+                </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto " style="float:right !important;">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#" id="white_l">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="white_l">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="white_l">Calender and Updates</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle"  id="white_l"   href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    People
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Co-ordinators</a>
+                    <a class="dropdown-item" href="#">Secretary</a>
+                    <a class="dropdown-item" href="#">Captains</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          </div>
+      
+      </header>
+      
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
