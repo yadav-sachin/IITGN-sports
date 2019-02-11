@@ -230,3 +230,12 @@ to align it properly */
       margin-left: 15px;
   }
 }
+
+/*card properties*/
+.card-deck .card .card-body{
+  background-color:rgb(245, 128, 23,0.6);
+}
+
+.card-deck .card .card-header{
+  background-color:rgba(228, 245, 17, 0.3);
+}
