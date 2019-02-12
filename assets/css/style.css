@@ -3,7 +3,7 @@
       color:#ffffff !important;
     }
 
-    .nav-link:hover{
+    .nav-link:hover, .active {
       background:rgba(255, 255, 255, 0.1);
       border-radius:5px;
     }
