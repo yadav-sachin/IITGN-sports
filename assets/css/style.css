@@ -1,4 +1,6 @@
 
+/* Navigationbar */
+
   .nav-link, .navbar-brand{
       color:#ffffff !important;
     }
@@ -8,7 +10,7 @@
       border-radius:5px;
     }
 
-
+/* background video */
     header {
 position: relative;
 background-color: black;
@@ -103,7 +105,8 @@ to align it properly */
 
 /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
   to icons for glowing effect and use transition property for smooth transition effect. */
-/*facebook*/
+
+/*social contact us icons*/
 .wrapper ul li:hover.facebook {
   border: 5px solid #3b5998;
   box-shadow: 0 0 15px #3b5998;
@@ -142,7 +145,7 @@ to align it properly */
   transition: all 0.5s ease;
 }
 
-/* google */
+
 .wrapper ul li:hover.google {
   border: 5px solid #dd4b39;
   box-shadow: 0 0 15px #dd4b39;
@@ -231,16 +234,66 @@ to align it properly */
   }
 }
 .card-deck .card {
-  
+
 }
 
 /*card properties*/
 .card-deck .card .card-body{
   background-color:#fff;
-  
-  
+
+
 }
 
 .card-deck .card .card-header{
   background-color:#f5f5f5;
+}
+
+
+/* text over video */
+
+#animation_div {
+  animation: animation_div 2s 1;
+  font-family: 'Lobster', cursive;
+}
+.opacity_0_1 {
+  opacity: 1;
+  animation: opacity_0_1 2s 1;
+  font-family: 'Staatliches', cursive;
+}
+@keyframes animation_div {
+            0%{
+              margin-top:120px;
+              opacity: 0;
+              background:rgba(255, 255, 255, 0)
+            }
+            30%{
+
+              opacity: 0.3;
+              background:rgba(255, 255, 255, 0.1)
+            }
+            90%{
+              opacity: 1;
+              background:rgba(255, 255, 255, 0.7);
+              box-shadow:0px 0px 2px rgba(0, 0, 0, 0.5);
+            }
+        }
+        .opacity_0_1 {
+      margin-top:25vh;
+  }
+@keyframes opacity_0_1 {
+  0%{
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 800px) {
+  .opacity_0_1 {
+      margin-top:0px !important;
+  }
+
 }
