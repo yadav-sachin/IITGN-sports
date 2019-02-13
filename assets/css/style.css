@@ -4,7 +4,8 @@
   .nav-link, .navbar-brand{
       color:#ffffff !important;
       font-size: 17px;
-      margin-top:4px;
+      padding-right:7px !important;
+      padding-left:7px !important; 
     }
 
     .nav-link:hover, .active {
