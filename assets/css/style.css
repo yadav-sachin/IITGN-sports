@@ -3,6 +3,9 @@
 
   .nav-link, .navbar-brand{
       color:#ffffff !important;
+      font-size: 17px;
+      padding-right:7px !important;
+      padding-left:7px !important; 
     }
 
     .nav-link:hover, .active {
@@ -14,7 +17,7 @@
     header {
 position: relative;
 background-color: black;
-height: 75vh;
+
 min-height: 100vh;
 width: 100%;
 overflow: hidden;
@@ -39,7 +42,7 @@ overflow: hidden;
   header .container {
     position: relative;
     z-index: 2;
-
+    
 
   }
 
@@ -254,6 +257,7 @@ to align it properly */
 #animation_div {
   animation: animation_div 2s 1;
   font-family: 'Lobster', cursive;
+  margin-top:70px; 
 }
 .opacity_0_1 {
   opacity: 1;
@@ -294,6 +298,9 @@ to align it properly */
 @media screen and (max-width: 800px) {
   .opacity_0_1 {
       margin-top:0px !important;
+  }
+  header .overlay {
+    background-image: none !important;
   }
 
 }
