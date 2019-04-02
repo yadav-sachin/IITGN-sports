@@ -304,6 +304,9 @@ to align it properly */
   }
 
 }
+/*****************************************************
+/*Scrollbar
+/****************************************************
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
@@ -312,7 +315,6 @@ to align it properly */
 
 /* Track */
 ::-webkit-scrollbar-track {
-
   padding: 1px;
 }
 
@@ -327,6 +329,7 @@ to align it properly */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
 
 .card-header{
   font-size:170%;
