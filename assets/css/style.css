@@ -304,6 +304,12 @@ to align it properly */
   }
 
 }
+<<<<<<< HEAD
+=======
+/*****************************************************
+/*Scrollbar
+/****************************************************
+>>>>>>> sachin2
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
@@ -312,7 +318,10 @@ to align it properly */
 
 /* Track */
 ::-webkit-scrollbar-track {
+<<<<<<< HEAD
 
+=======
+>>>>>>> sachin2
   padding: 1px;
 }
 
@@ -328,6 +337,13 @@ to align it properly */
   background: #555;
 }
 
+<<<<<<< HEAD
 .card-header{
   font-size:170%;
 }
+=======
+
+.card-header{
+  font-size:170%;
+}
+>>>>>>> sachin2
